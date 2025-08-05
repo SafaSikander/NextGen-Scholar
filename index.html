@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Scholars - Professional Coaching Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+    }
+    header {
+      position: relative;
+      background: url('https://www.bsc.es/sites/default/files/public/styles/bscw2_-_simple_crop_style/public/bscw2/pages/education/professional-training-header.jpg?itok=SL-Xay1g&sc=58ece79afb889a10dfcdf21974c18578') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+
+    }
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .typewriter {
+      font-weight: bold;
+      font-size: 18px;
+      color: #ffeaa7;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid white;
+      width: 0;
+      animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
+    }
+    @keyframes typing { to { width: 100%; } }
+    @keyframes blink { 50% { border-color: transparent; } }
+
+    nav {
+      background: #007bff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #0056b3;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .logo img {
+      width: 100px;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #000000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .course {
+      background: #ffffff;
+      border-left: 5px solid #ff4757;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .course:hover {
+      transform: scale(1.05);
+    }
+    .enroll-section {
+      background: linear-gradient(to right, #ff6b6b, #1e90ff);
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      color: white;
+    }
+    .enroll-button {
+      background: #ff4757;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 15px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .enroll-button:hover {
+      background: #e84118;
+    }
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .testimonial {
+      background: #f1f2f6;
+      border-left: 5px solid #007bff;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 100%;
+      text-align: center;
+    }
+    .contact {
+      background: #dff9fb;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #343a40;
+      color: white;
+      padding: 15px 0;
+    }
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4757;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .hero-text h1 { font-size: 26px; }
+      .typewriter { font-size: 14px; }
+      .logo img { width: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="URL_TO_YOUR_LOGO" alt="Coaching Center Logo">
+  </div>
+  <header>
+    <div class="hero-text">
+      <h1>Welcome to NextGen Scholars</h1>
+      <div class="typewriter" style="color: #ffeaa7;">Empowering Future Minds with Practical Skills</div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Courses</a>
+    <a href="#fees">Fees</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At NextGen Scholars, we are committed to providing high-quality education that empowers students to achieve their academic and professional goals. Our experienced instructors offer personalized coaching tailored to each student's unique needs, ensuring a supportive and effective learning environment.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="course-list">
+      <div class="course"><h3>Computer Course</h3><p>MS Office</p></div>
+      <div class="course"><h3>Computer Course</h3><p>Excel / Advance Excel</p></div>
+      <div class="course"><h3>Computer Course</h3><p>PowerPoint</p></div>
+      <div class="course"><h3>Computer Course</h3><p>Access</p></div>
+      <div class="course"><h3>Graphic Designing Module 1</h3><p>Photoshop</p></div>
+      <div class="course"><h3>Graphic Designing Module 2</h3><p>Illustrator</p></div>
+      <div class="course"><h3>Graphic Designing Module 3</h3><p>Canva</p></div>
+      <div class="course"><h3>Programming Language</h3><p>C++</p></div>
+      <div class="course"><h3>Programming Language</h3><p>C#</p></div>
+      <div class="course"><h3>Web Development Module 1</h3><p>HTML, CSS</p></div>
+      <div class="course"><h3>Web Development Module 2</h3><p>JavaScript</p></div>
+      <div class="course"><h3>English Language</h3><p>Beginner to Advanced</p></div>
+      <div class="course"><h3>Tuition Classes</h3><p>For Classes 9 to 12 – All Subjects</p></div>
+    </div>
+  </section>
+
+  <section class="enroll-section">
+    <h2>Enroll Today & Start Your Journey!</h2>
+    <p>Join us for a transformative learning experience with expert guidance and a focus on real progress!</p>
+    <a class="enroll-button" href="https://wa.me/923132429474">📲 Enroll Now</a>
+  </section>
+
+  <section id="fees">
+    <h2>Course Fees</h2>
+    <ul>
+      <li>Basic Computer: Rs. 1500/month</li>
+      <li>Advanced Excel/Access: Rs. 1800/month</li>
+      <li>Graphic Designing: Rs. 1800-2500/month</li>
+      <li>Programming Language: Rs. 2300/month</li>
+      <li>Web Development: Rs. 2000-2500/month</li>
+      <li>English: Rs. 1800–2500/month</li>
+      <li>Tuition: Rs. 1800–3000/month</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonials">
+      <div class="testimonial"><p>"NextGen Scholars has transformed my learning experience. The support and guidance I received were invaluable!"</p></div>
+      <div class="testimonial"><p>"The courses are well-structured, and the instructors are incredibly knowledgeable. Highly recommend!"</p></div>
+      <div class="testimonial"><p>"I gained confidence and skills that helped me excel in my studies. Thank you, NextGen Scholars!"</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/923132429474">0313 2429474</a></p>
+      <p><strong>Email:</strong> <a href="mailto:safasikander02@gmail.com">safasikander01@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen Scholars. All rights reserved.</p>
+  </footer>
+</body>
+</html>
